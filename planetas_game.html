@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/new_mlogo.png">	
+		<link rel="stylesheet" type="text/css" href="planetas_css.css">		
+		<title>Mastersystem</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/logout_noLoad.js"></script>
+		<script src="js/planetas_game.js"></script>
+		<script src="js/registo.js"></script>
+
+	
+		
+	
+	</head>
+	<body>
+<!-- 										Navigation Bar 											-->	
+		<header class="background-pic">
+			<a href="planetas_home.html"><img class="logo" src="img/new_mlogo.png" alt="Mastersystem Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="planetas_login.html" id="logout-button"><img id="logout" src="img/shut-down-icon.png" alt="Logout"></a></li>
+					<li><a href="planetas_game.html">Play</a></li>
+					<li><a href="planetas_rules.html">Game</a></li>	
+					<li><a href="planetas_news.html">News</a></li>					
+					<li><a href="planetas_home.html">Home</a></li>
+				</ul>				
+			</nav>		
+		</header>
+<!-- 											Game												-->	
+		<div class = "game-box">       
+            <div id="board">
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                </div>                
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>                               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>              
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>               
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                        <div class="resposta"></div>
+                    </div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>
+                    <div class="try"></div>              
+                </div>
+                <div class="colm">
+                    <div class="results">
+                        <div class="img"><button onclick="refresh()"></button></div>
+                    </div>
+                    <div id="c0" class="key"></div>
+                    <div id="c1" class="key"></div>
+                    <div id="c2" class="key"></div>
+                    <div id="c3" class="key"></div>                
+                </div>
+            </div>
+            <div id="start"><button onclick="start()">Start</button></div>
+            <div id="stats_button"><button onclick="stats()">Stats</button></div>
+            <div id="check" class="check">
+                <div class="clear_btn"><button onclick="clear_all()">Clear</button></div>
+                <button id="hipotese0" class="hipotese" onclick="remove(this.id)"></button>
+                <button id="hipotese1" class="hipotese" onclick="remove(this.id)"></button>
+                <button id="hipotese2" class="hipotese" onclick="remove(this.id)"></button>
+                <button id="hipotese3" class="hipotese" onclick="remove(this.id)"></button>
+                <div class="check_btn"><button id="btn_check" onclick="check()">Check</button></div>
+            </div>
+            <div id="planets_list" class="plist_content">
+                <button id="planet0" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet1" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet2" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet3" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet4" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet5" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet6" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet7" class="hipotese" onclick="pick(this.id)"></button>
+                <button id="planet8" class="hipotese" onclick="pick(this.id)"></button>
+            </div>  
+
+            <div id="end">-</div>
+            <div id="stats">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Attempts</td>
+                            <td class="finalstats"></td>
+                        </tr>                                                
+                        <tr>
+                            <td>Time</td>
+                            <td class="finalstats"></td>
+                        </tr>                                                
+                        <tr>
+                            <td>Greens</td>
+                            <td class="finalstats">15</td>
+                        </tr>                        
+                        <tr>
+                            <td>Whites</td>
+                            <td class="finalstats">5</td>
+                        </tr>
+                        <tr>
+                            <td>Score</td>
+                            <td class="finalstats">330</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                <div id="final_key">
+                    <div id="final0" class="hipotese"></div>
+                    <div id="final1" class="hipotese"></div>
+                    <div id="final2" class="hipotese"></div>
+                    <div id="final3" class="hipotese"></div>
+                </div>                
+                <div class="final_buttons">
+                    <button onclick="refresh()">Play Again</button>
+                    <button onclick="board()">Board</button>
+                </div>
+            </div>
+		</div>			
+		<a href="planetas_topscores.html" class="score-btn">
+			<div class="scores">
+				<div class="title">Scores:</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Player</th>
+							<th>R1</th>
+							<th>R2</th>
+							<th>R3</th>
+							<th>R4</th>
+							<th>R5</th>
+							<th>R6</th>
+							<th>R7</th>
+							<th>R8</th>
+							<th>R9</th>
+							<th>S</th>
+						</tr>			
+					</thead>
+					<tbody>
+						<tr>
+							<td id ="player-name">username</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">-</td>
+							<td class="points">360</td>
+						</tr>	
+						<tr>
+							<th>Time</th>
+							<td id="timer" colspan="10">00:00.000</td>
+						</tr>					
+					</tbody>
+				</table>
+			</div>
+		</a>
+<!-- 											Footer									    		-->			
+		<footer>
+			<a href="planetas_aboutus.html">About us</a>
+		</footer>			
+	</body>
+</html>

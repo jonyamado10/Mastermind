@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/new_mlogo.png">	
+		<link rel="stylesheet" type="text/css" href="planetas_css.css">
+		<script src="js/registo.js"></script>		
+		<title>Mastersystem</title>
+	</head>
+	<body>
+<!-- 										Navigation Bar 											-->	
+		<header class="background-pic">
+			<a href="planetas_home.html"><img class="logo" src="img/new_mlogo.png" alt="Mastersystem Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="planetas_login.html" id="logout-button"><img id="logout" src="img/shut-down-icon.png" alt="Logout"></a></li>
+					<li><a href="planetas_login.html">Play</a></li>
+					<li><a href="planetas_rules.html">Game</a></li>	
+					<li><a href="planetas_news.html">News</a></li>					
+					<li><a href="planetas_home.html">Home</a></li>
+				</ul>				
+			</nav>	
+		</header>
+<!-- 											Login | Sign In									-->	
+		<div id="login-box">
+			<div class="btn"><a class="active">Log In</a></div>
+			<div class="btn"><a href="planetas_signin.html">Sign In</a></div>			
+			<div class="username-box">
+				Username
+				<input class="input" id = "username" type="text" placeholder="Username">
+			</div>	
+			<div class="pass-box">
+				Password
+				<input class="input" id = "password" type="password" placeholder="Password">
+			</div>
+			<div class="submit">
+				<a class="submit-btn" onClick= "login()" ><span>Log In</span></a>
+			</div>			
+			<div class="create_acc-box">
+				<div>Forgot your password or username?<br><a href="planetas_newpass.html">Click here</a></div>
+			</div>								
+		</div>			
+<!-- 											Play as guest									-->							
+		<div class="guest-box">
+			<div class="guest">Play as a guest:</div>
+			<div class="nick-box">
+				<div>Nickname</div>
+				<input class="input" type="text" placeholder="Nickname">
+			</div>
+			<div class="submit">
+				<a class="submit-btn" href="planetas_game.html"><span>Try!</span></a>
+			</div>	
+		</div> 
+<!-- 											Footer									    	-->			
+		<footer>
+			<a href="planetas_aboutus.html">About us</a>
+		</footer>	
+	</body>
+</html>

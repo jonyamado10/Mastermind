@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/new_mlogo.png">	
+		<link rel="stylesheet" type="text/css" href="planetas_css.css">	
+		<script src="js/registo.js"></script>			
+		<title>Mastersystem</title>
+	</head>
+	<body>
+<!-- 										Navigation Bar 											-->	
+		<header class="background-pic">
+			<a href="planetas_home.html"><img class="logo" src="img/new_mlogo.png" alt="Mastersystem Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="planetas_login.html" id="logout-button"><img id="logout" src="img/shut-down-icon.png" alt="Logout"></a></li>
+					<li><a href="planetas_login.html">Play</a></li>
+					<li><a href="planetas_rules.html">Game</a></li>	
+					<li><a href="planetas_news.html">News</a></li>					
+					<li><a href="planetas_home.html">Home</a></li>
+				</ul>				
+			</nav>		
+		</header>
+<!-- 											Login | Sign In									-->	
+		<div id="signin-box">
+			<div class="btn"><a href="planetas_login.html">Log In</a></div>
+			<div class="btn"><a class="active">Sign In</a></div>
+			<div class="username-box">
+				Username
+				<input class="input" id = "username" type="text" placeholder="Username">
+			</div>
+			<div class="pass-box">
+				Email
+				<input class="input" id = "email" type="text" placeholder="Email">
+			</div>					
+			<div class="pass-box">
+				Password
+				<input class="input" id = "password" type="password" placeholder="Password">
+			</div>
+			<div class="pass-box">
+				Confirm Password
+				<input class="input" id="Cpassword" type="password" placeholder="Confirm Password">
+			</div>
+			<div class="submit">
+				<a class="submit-btn" onclick="store()"><span>Sign in</span></a>
+			</div>		
+		</div>
+<!-- 											Footer									    		-->	
+		<footer>
+			<a href="planetas_aboutus.html">About us</a>
+		</footer>			
+	</body>
+</html>

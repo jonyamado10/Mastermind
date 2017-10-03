@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/new_mlogo.png">	
+		<link rel="stylesheet" type="text/css" href="planetas_css.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/logout_noLoad.js"></script>	
+		<script src="js/planetas_scores.js"></script>	
+		<title>Mastersystem</title>
+	</head>
+	<body>
+<!-- 										Navigation Bar 											-->	
+		<header class="background-pic">
+			<a href="planetas_home.html"><img class="logo" src="img/new_mlogo.png" alt="Mastersystem Logo"></a>
+			<nav>
+				<ul>
+					<li><a href="planetas_login.html" id="logout-button"><img id="logout" src="img/shut-down-icon.png" alt="Logout"></a></li>
+					<li><a id= "play-login" href="planetas_login.html">Play</a></li>
+					<li><a href="planetas_rules.html">Game</a></li>	
+					<li><a href="planetas_news.html">News</a></li>					
+					<li><a href="planetas_home.html">Home</a></li>
+				</ul>				
+			</nav>	
+		</header>
+<!-- 											MyScores									    		-->	
+		<div class="myscore-box">
+			<div class="btn"><a href="planetas_topscores.html">Top Scores</a></div>
+			<div class="btn"><a class="active">My Scores</a></div>			
+			<h3 id = "player-name">----</h3>			
+			<table>
+				<thead>
+					<tr>
+						<th>Best:</th>
+						<th id = "score_0"></th>
+						<th id = "time_0"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2nd</td>
+						<th id = "score_1"></th>
+						<th id = "time_1"></th>
+					</tr>
+					<tr>
+						<td>3rd</td>
+						<th id = "score_2"></th>
+						<th id = "time_2"></th>
+					</tr>
+					<tr>
+						<td>4th</td>
+						<th id = "score_3"></th>
+						<th id = "time_3"></th>
+					</tr>
+					<tr>
+						<td>5th</td>
+						<th id = "score_4"></th>
+						<th id = "time_4"></th>
+					</tr>										
+				</tbody>
+			</table>
+		</div>
+<!-- 											Footer									    		-->			
+		<footer>
+			<a href="planetas_aboutus.html">About us</a>
+		</footer>			
+	</body>
+</html>

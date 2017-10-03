@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/new_mlogo.png">	
+		<link rel="stylesheet" type="text/css" href="planetas_css.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/logout.js"></script>
+		<script src="js/avaliacao.js"></script>		
+		<title>Mastersystem</title>
+	</head>
+	<body>
+<!-- 										Navigation Bar 											-->	
+		<header class="background-pic">
+			<a><img class="logo" src="img/new_mlogo.png" alt="Mastersystem Logo"></a>
+			<nav>
+				<ul>
+					<li><a id="logout-button" href="planetas_login.html" ><img id="logout" src="img/shut-down-icon.png" alt="Logout"></a></li>
+					<li><a id= "play-login" href="planetas_login.html">Play</a></li>
+					<li><a href="planetas_rules.html">Game</a></li>	
+					<li><a href="planetas_news.html">News</a></li>					
+					<li><a href="planetas_home.html">Home</a></li>
+				</ul>				
+			</nav>		
+		</header>
+<!-- 											Home									-->	
+		
+		<div class="top-box">
+		
+			<div class="main-box">
+				<div class="title">Gameplay</div>
+ 				<video id = "video" height="295" width="645" controls>
+					<source src="video/gameplay.mp4" type="video/mp4">
+					Your browser does not support HTML5 video.
+				</video>
+			</div>			
+			<a href="planetas_updates.html" class="right-box">
+				<div class="title">Update a0.02:</div>
+				<div class="text">
+				
+				In this update we added some new content to our website:
+					<dl>
+						<dt>Added:</dt>
+						<dd>Content to "Rules" page;</dd>
+						<dt>Added:</dt>
+						<dd>Content to "News" page;</dd>
+						<dt>New:</dt>
+						<dd>"Updates" page was created;</dd>
+					</dl>
+				And more!	
+				</div>
+			</a>	
+		</div>
+		<button id = "clickme" onclick="vanish()">Click ME<Button>
+		<div class="b-box"><a href="planetas_rules.html">
+		
+			<div class="title">The Mastersystem:</div>
+			<div class="text">
+			<p>Are you familiar to the classic board game Mastermind? So this game was made for you! However we take things serious here so if you want to play this game you better be a real master mind because you're going to be queued up with players all over the world and we're sure you want to be the best.</p>
+			<p>By clicking on this box you'll be redirected to a page with all the information you need to know about this game such as rules, rank system, scores, tricks and tips...</p></div>
+		</a></div>
+<!-- 											Footer									    		-->			
+		<footer>
+			<a href="planetas_aboutus.html">About us</a>
+		</footer>		
+	</body>
+</html>
